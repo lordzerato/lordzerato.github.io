@@ -1,0 +1,79 @@
+* {
+    font-family: 'Roboto Mono';
+}
+
+#underconstruction{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/000/192/083/original/Under_construction_landing_page.jpg");
+    background-size: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+
+#div1 {
+    width:110px;
+    height:110px;
+    padding:0px;
+    border:1px solid #aaaaaa;
+    background-color: aquamarine;
+}
+
+#buttonNext {
+    font-size: larger;
+    position: absolute;
+    right: 0;
+}
+
+#introStory {
+    background-color: antiquewhite;
+    opacity: 0;
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    margin: 10% 20%;
+}
+
+#intro {
+    opacity: 1;
+    width: 100%;
+    height: 625px;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#introImg {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin: 20%;
+    text-align: center;
+    opacity: 0;
+    scroll-padding-bottom: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+body {
+    background: url(https://space.biz.pl/wp-content/uploads/2019/11/home-banner.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    margin: 0;
+}
+
+.answer {
+    width: 110px;
+    height: 110px;
+    draggable: true;
+}
