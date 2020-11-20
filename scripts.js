@@ -27,7 +27,7 @@ function check(){
         }
     }
     alert('Jawaban benar, lanjut ke gambar berikutnya~');
-    return true
+    return true;
 }
 
 
