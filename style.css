@@ -2,6 +2,15 @@
     font-family: 'Roboto Mono';
 }
 
+#underconstruction{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/000/192/083/original/Under_construction_landing_page.jpg");
+    background-size: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+
 #div1 {
     width:110px;
     height:110px;
@@ -34,6 +43,7 @@
 }
 
 #canvas{
+    margin-top: 50px;
     margin-left: 100px;
 }
 
@@ -60,4 +70,10 @@ body {
     background-repeat: no-repeat;
     background-position-x: -300px;
     margin: 0;
+}
+
+.answer {
+    width: 110px;
+    height: 110px;
+    draggable: true;
 }
