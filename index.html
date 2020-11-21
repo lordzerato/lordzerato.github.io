@@ -10,50 +10,55 @@
     </head>
     <body>
         <div id="canvas">
-            <form action="./soal2.html">
+            <form action="./soal2.html" id="myForm">
                 <table border="10px" id="canvas">
                     <tr>
-                        <td><div class="id1" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id2" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id3" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab1" name="id1" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab2" name="id2" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab3" name="id3" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="id4" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id5" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id6" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab4" name="id4" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab5" name="id5" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab6" name="id6" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="id7" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id8" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                        <td><div class="id9" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab7" name="id7" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab8" name="id8" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                        <td><div id="tab9" name="id9" class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                     </tr>
-                </table><img id="drag10" src="./img/logoH8.jpg" width="430" height="430" style="margin:-800px 0px 0px 600px">
-                <div style="margin:20px 0px 0px 0px">
+                </table><img id="drag10" src="./img/logoH8.jpg" width="420" height="420" style="margin:-800px 0px 0px 600px">
+                <div style="margin: 5px 0 0 30px">
                     <audio controls="controls" autoplay="autoplay">
                         <source src="./audio/marriedLife.mp3" type="audio/mp3" />
                     </audio>
                 </div>
-                <br><input type="button" onclick="location.reload()" value="Reset">
-                <input id="buttonSubmit" type="submit" value="Submit" onclick="return check()">
+                <br>
+                <div style="margin: -75px 350px -20px 370px;">
+                    <input type="button" onclick="resetForm('lh')" value="Reset" class="button">
+                    <input id="buttonSubmit" type="submit" value="Submit" onclick="return check()" class="button">
+                </div>
                 <br><br>
-                <img id="drag7" src="./img/lh7.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag3" src="./img/lh3.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag5" src="./img/lh5.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag1" src="./img/lh1.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag9" src="./img/lh9.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag6" src="./img/lh6.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag4" src="./img/lh4.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag8" src="./img/lh8.PNG" ondragstart="drag(event)" class="answer">
-                <img id="drag2" src="./img/lh2.PNG" ondragstart="drag(event)" class="answer">
-                <input type="hidden" id="id1">
-                <input type="hidden" id="id2">
-                <input type="hidden" id="id3">
-                <input type="hidden" id="id4">
-                <input type="hidden" id="id5">
-                <input type="hidden" id="id6">
-                <input type="hidden" id="id7">
-                <input type="hidden" id="id8">
-                <input type="hidden" id="id9">
+                <div id="tempatAnswer" style="margin: -12px 0 0 25px; padding: 0;">
+                    <input type="hidden" id="id1">
+                    <input type="hidden" id="id2">
+                    <input type="hidden" id="id3">
+                    <input type="hidden" id="id4">
+                    <input type="hidden" id="id5">
+                    <input type="hidden" id="id6">
+                    <input type="hidden" id="id7">
+                    <input type="hidden" id="id8">
+                    <input type="hidden" id="id9">
+                    <img id="drag7" src="./img/lh7.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag3" src="./img/lh3.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag5" src="./img/lh5.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag1" src="./img/lh1.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag9" src="./img/lh9.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag6" src="./img/lh6.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag4" src="./img/lh4.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag8" src="./img/lh8.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                    <img id="drag2" src="./img/lh2.PNG" class="answer" draggable="true" ondragstart="drag(event)" style="margin-right: -10px;">
+                </div>
             </form>
         </div>
     </body>
